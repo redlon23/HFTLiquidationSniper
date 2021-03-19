@@ -1,0 +1,53 @@
+# ========== HFT Liquidation Sniper =========
+# Please make sure there a space between the setting and the field
+# Example -> <setting name>: <your setting>
+
+LicenceKey: 
+
+# Select desired exchange platform to trade,  { BinanceFutures }
+platform: BinanceFutures
+
+# Enter your public and secret api key here
+publicKey: 
+secretKey: 
+
+# Specify which symbol you want to trade
+symbol: ETHUSDT
+
+# Specify which side you want to trade { Long | Short | Both }
+side: Both
+
+# Select what percentage of your balance the bot should use per entry order
+quantityPercentage: 1
+
+# Maximum position quantity that the bot is allowed to manage
+maxPositionSize: 10
+
+# Select vwap off set percentage which will determine the buy and sell zones
+vwapOffsetPercentage: 0.1
+
+# Specify your leverage. This is crucial for accuracy
+leverage: 3
+
+# Minimum amount of liquidation amount to enter a position
+minimumLiquidationValue: 0.01
+
+# Choose a type of tp to use, { Limit | Trailing }
+typeOfTp: Trailing
+
+limitTpPercentage: 0.1
+
+# Indicates when the bot will start trailing, { float }
+trailingStartPercentage: 1
+
+# Indicates how far behind it will trail tp order to be placed, { float }
+trailingPercentage: 0.5
+
+# {true | false}
+stopLossEnabled: true
+
+#Stop Loss percentage based off of your average price
+stopLossPercentage: 0.001
+
+# How long you want the bot to wait after closing a position
+coolDownPeriod: 15

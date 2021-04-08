@@ -12,7 +12,7 @@ publicKey:
 secretKey: 
 
 # Specify which symbol you want to trade
-symbol: ETHUSDT
+symbol: BTCUSDT
 
 # Specify which side you want to trade { Long | Short | Both }
 side: Both
@@ -21,16 +21,16 @@ side: Both
 quantityPercentage: 1
 
 # Maximum position quantity that the bot is allowed to manage
-maxPositionSize: 10
+maxPositionSize: 5
 
 # Select vwap off set percentage which will determine the buy and sell zones
-vwapOffsetPercentage: 0.1
+vwapOffsetPercentage: 1
 
 # Specify your leverage. This is crucial for accuracy
 leverage: 3
 
 # Minimum amount of liquidation amount to enter a position
-minimumLiquidationValue: 0.01
+minimumLiquidationValue: 1
 
 # Choose a type of tp to use, { Limit | Trailing }
 typeOfTp: Trailing
@@ -44,10 +44,10 @@ trailingStartPercentage: 1
 trailingPercentage: 0.5
 
 # {true | false}
-stopLossEnabled: true
+stopLossEnabled: false
 
 #Stop Loss percentage based off of your average price
-stopLossPercentage: 0.001
+stopLossPercentage: 20
 
 # How long you want the bot to wait after closing a position
 coolDownPeriod: 15
